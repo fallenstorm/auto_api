@@ -1,8 +1,8 @@
 ## **Auto API**
 **Test**
 
-`pip install -r requirements/requirements-testing.txt`
-`pytest`
+`pip install -r requirements/requirements-testing.txt && pytest`
+
 
 **Install**
 
@@ -28,9 +28,10 @@ Add to urls.py:
 
 Add any application and models, etc:
     
-    created_at = models.DateTimeField(auto_now_add=True)
-    name = models.TextField()
-    subscribers = models.IntegerField()
+    class Blog(models.Model):
+        created_at = models.DateTimeField(auto_now_add=True)
+        name = models.TextField()
+        subscribers = models.IntegerField()
 
 Now you can use CRUD for your models:
 
