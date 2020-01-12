@@ -1,0 +1,6 @@
+/.gtm/
+.idea/
+__pycache__/
+*.egg-info
+*.egg
+/build/
