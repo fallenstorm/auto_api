@@ -17,8 +17,8 @@ setup(
     name='auto_api',
     version=version,
     install_requires=[
-        'djangorestframework',
-        'django_filter'
+        'djangorestframework>=3',
+        'django_filter>=2'
     ],
     packages=find_packages(exclude=['tests*']),
     include_package_data=True,
